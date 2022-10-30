@@ -1,3 +1,4 @@
+/* installed 3rd party packages */
 let createError = require('http-errors');
 let express = require('express');
 let path = require('path');
@@ -7,7 +8,7 @@ let logger = require('morgan');
 let indexRouter = require('./routes/index');
 let usersRouter = require('./routes/users');
 
-let app = express(); 
+let app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -18,11 +19,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'node_modules')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/', indexRouter); // localhost:3000
+app.use('/users', usersRouter); // localhost:3000/users
 
-// catch 404 and forward to error handler
+// catch 404 and forward to error 
 app.use(function(req, res, next) {
   next(createError(404));
 });
@@ -35,7 +37,11 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('error',
+  {
+    title:"Error"
+  }
+  );
 });
 
 module.exports = app;
