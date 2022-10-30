@@ -1,0 +1,35 @@
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+<main>
+  <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Welcome to the <%= title %> page</h1>
+    <div class="row">
+    <div class="column_photo">
+        <div class = "photo">
+            <img src="about_me_photo.jpg" alt="photo of nathan chiang" width="100%" height="100%">
+        </div>
+    </div>
+    <div class="column_text">
+        <div id="abt_me_text">
+            <h1>Nathan Chiang</h1>
+            <p>I am Nathan,  a current second year student at Ontario Tech University.
+                I have many interests, but my main ones are 3d modelling, chinese history and general video gaming.
+                I enjoy writing stories and enjoy learning about computers just as much. In the future, I wish to use my skills to help others create their own stories or secure their networks.
+                Below, you will find a video I have edited using clips from my favourite TV show, for the HTML embed.
+             </p>
+        </div>
+        
+    </div>
+</div>
+
+<div class = "video">
+    <video width="40%" height="40%" controls="" autoplay="" loop="" muted="" poster="on_record.png" id="video">
+        <source src="assignment1video.mp4" type="video/mp4">
+    </video>
+</section>
+  </div>
+</div>
+</main>
+<%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %>
