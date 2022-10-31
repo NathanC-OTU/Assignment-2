@@ -1,3 +1,10 @@
+.display-1 {
+    text-align: center;
+}
+.display-5 {
+    text-align: center;
+}
+
 /* Project styling */
 .column {
     float: left;
@@ -25,10 +32,6 @@
     text-align: center;
 }
 
-.display-4 {
-    text-align: center;
-}
-
 /* About Me Styling */
 .photo {
     text-align: center;
@@ -49,4 +52,18 @@
     margin: 20px;
     background-color: lightgray;
     
+}
+
+/* About Me Styling */
+.emailform {
+    size: 50%;
+    text-align: center;
+}
+
+.subject {
+    size: 1000px;
+}
+
+.submitbutton {
+    text-align: center;
 }
