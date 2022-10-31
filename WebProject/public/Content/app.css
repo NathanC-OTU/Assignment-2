@@ -1,1 +1,52 @@
-/* custom css goes here */
+/* Project styling */
+.column {
+    float: left;
+    width: 50%;
+
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.proj_column_content {
+    background-color: lightgray;
+    margin: 10px;
+    text-align: center;
+}
+
+.showcase {
+    padding: 20px;
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+}
+
+.display-4 {
+    text-align: center;
+}
+
+/* About Me Styling */
+.photo {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+.video {
+    text-align: center ;
+    padding-bottom: 50px;
+}
+
+.paddingtext {
+    text-align: center;
+    margin: 20px;
+    background-color: lightgray;
+    
+}
